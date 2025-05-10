@@ -2,7 +2,7 @@
 Descripción
 Este ejercicio resuelve el problema de encontrar todas las rutas desde la raíz hasta las hojas en un árbol binario, donde la suma de los valores de los nodos sea igual a un valor objetivo (targetSum). La solución está implementada en Java, en la clase Serie1.
 
-Implementación
+##  Implementación
 Se utilizó una técnica de backtracking con búsqueda en profundidad (DFS) para explorar todas las rutas posibles. Si al llegar a una hoja, la suma acumulada coincide con el targetSum, esa ruta se guarda en la lista de resultados.
 
 La clase principal es Serie1.
@@ -18,13 +18,12 @@ Se respetó el Principio Open/Closed (OCP): el diseño permite extender funciona
 
 Comentarios claros en el código para facilitar su lectura y mantenimiento.
 
-🧪 Ejecución
+##  Ejecución
 Puedes ejecutar el archivo Serie1.java para ver un ejemplo funcional del árbol y los caminos válidos con suma 22.
-
 
 Caminos con suma 22:
 [5, 4, 11, 2]
- Nota
+##  Nota
 Este ejercicio corresponde a mi carnet: 7690-23-18731.
 
 # Proyecto COVID-19 Serie ll
