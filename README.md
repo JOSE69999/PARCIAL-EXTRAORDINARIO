@@ -1,4 +1,33 @@
-# Proyecto COVID-19 - Consumo de API Pública con Spring Boot
+##  Serie I – Caminos con suma objetivo en árbol binario
+Descripción
+Este ejercicio resuelve el problema de encontrar todas las rutas desde la raíz hasta las hojas en un árbol binario, donde la suma de los valores de los nodos sea igual a un valor objetivo (targetSum). La solución está implementada en Java, en la clase Serie1.
+
+Implementación
+Se utilizó una técnica de backtracking con búsqueda en profundidad (DFS) para explorar todas las rutas posibles. Si al llegar a una hoja, la suma acumulada coincide con el targetSum, esa ruta se guarda en la lista de resultados.
+
+La clase principal es Serie1.
+
+El método público es pathSum(TreeNode root, int targetSum).
+
+Se apoyó en un método privado recursivo findPaths que realiza la lógica central.
+
+Buenas prácticas
+Se aplicó el Principio de Responsabilidad Única (SRP): cada método hace una sola tarea.
+
+Se respetó el Principio Open/Closed (OCP): el diseño permite extender funcionalidades sin modificar el código base.
+
+Comentarios claros en el código para facilitar su lectura y mantenimiento.
+
+🧪 Ejecución
+Puedes ejecutar el archivo Serie1.java para ver un ejemplo funcional del árbol y los caminos válidos con suma 22.
+
+
+Caminos con suma 22:
+[5, 4, 11, 2]
+ Nota
+Este ejercicio corresponde a mi carnet: 7690-23-18731.
+
+# Proyecto COVID-19 Serie ll
 
 Este proyecto en Java Spring Boot consume una API pública de estadísticas COVID-19 (RapidAPI) y guarda la información en una base de datos MySQL. Se enfoca en seguir buenas prácticas como separación por capas, principios SOLID y uso de JPA para persistencia.
 
@@ -68,12 +97,14 @@ com.miumgcovid.tarea.miumg
 
 ---
 
-## ⚙️ Configuración de Base de Datos
+## ⚙ Configuración de Base de Datos
 
 
 properties:
+--
 spring.datasource.url=jdbc:mysql://localhost:3306/covid_19_dbd
 spring.datasource.username=root
 spring.datasource.password=contrasena123
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+--
