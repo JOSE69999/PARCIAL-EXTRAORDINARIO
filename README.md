@@ -96,14 +96,18 @@ com.miumgcovid.tarea.miumg
 
 ---
 
-## ⚙ Configuración de Base de Datos
+## Configuración de Base de Datos
 
 
 properties:
---
+
 spring.datasource.url=jdbc:mysql://localhost:3306/covid_19_dbd
+
 spring.datasource.username=root
+
 spring.datasource.password=contrasena123
+
 spring.jpa.hibernate.ddl-auto=update
+
 spring.jpa.show-sql=true
---
+
